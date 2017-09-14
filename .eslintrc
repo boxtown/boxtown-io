@@ -1,7 +1,3 @@
 {
-    "extends": "standard",
-    "rules": {
-        "quotes": ["error", "double"],
-        "semi": ["error", "always"]
-    }
+    "extends": "standard"
 }

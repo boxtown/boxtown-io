@@ -1,1 +1,1 @@
-require("./assets/app.css");
+require('./assets/app.css')
