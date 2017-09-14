@@ -1,1 +1,1 @@
-import styles from "./assets/app.css";
+require("./assets/app.css");
