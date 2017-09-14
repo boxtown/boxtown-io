@@ -1,0 +1,9 @@
+{
+  "name": "boxtown",
+  "version": "1.0.0",
+  "description": "Static home page for boxtown",
+  "main": "index.js",
+  "repository": "https://github.com/boxtown/boxtown-2017.git",
+  "author": "Michael Ma",
+  "license": "MIT"
+}
