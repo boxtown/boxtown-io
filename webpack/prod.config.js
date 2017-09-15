@@ -13,7 +13,7 @@ module.exports = merge(baseConfig, {
       s3UploadOptions: {
         Bucket: 'boxtown.io'
       },
-      directory: path.resolve(__dirname, 'build')
+      directory: path.resolve(__dirname, '..', 'build')
     })
   ]
 })

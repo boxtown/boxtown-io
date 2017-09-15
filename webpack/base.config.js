@@ -1,18 +1,14 @@
 const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const webpack = require('webpack')
 
 module.exports = {
   entry: './src/app.js',
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, '..', 'build'),
     filename: 'bundle.js'
-  },
-  devtool: 'inline-source-map',
-  devServer: {
-    contentBase: './build',
-    hot: true
   },
   module: {
     loaders: [
@@ -23,7 +19,13 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('styles.css'),
     new HtmlWebpackPlugin({ template: 'index.html' }),
+    new CopyWebpackPlugin([ { from: 'static' } ]),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.EnvironmentPlugin(['NODE_ENV'])
-  ]
+  ],
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: path.resolve(__dirname, '..', 'build'),
+    hot: true
+  }
 }
