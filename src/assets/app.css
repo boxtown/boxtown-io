@@ -1,0 +1,10 @@
+ul.list {
+  margin-top: 1em;
+}
+ul.list li {
+  margin-bottom: 1em;
+}
+
+.card {
+  height: 100%;
+}
