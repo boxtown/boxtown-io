@@ -1,1 +1,1 @@
-require('./assets/app.css')
+import './assets/app.css';

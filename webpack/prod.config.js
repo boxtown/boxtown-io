@@ -4,6 +4,7 @@ const S3Plugin = require('webpack-s3-plugin')
 const baseConfig = require('./base.config')
 
 module.exports = merge(baseConfig, {
+  mode: "production",
   plugins: [
     new S3Plugin({
       s3Options: {
